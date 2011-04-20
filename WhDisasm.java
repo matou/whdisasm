@@ -11,7 +11,6 @@ public class WhDisasm {
 
     public static void main(String[] args) {
         current = parseTree;
-        Command test = new Command("blub");
         while(true) current.process();
     }
 
