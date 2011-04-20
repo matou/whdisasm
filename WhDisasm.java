@@ -33,6 +33,8 @@ public class WhDisasm {
             }
 
             c = (char)i;
+
+        // ignore non-whitespace characters
         } while(c!=' ' && c!='\n' && c!='\t');
 
         return c;
