@@ -43,12 +43,12 @@ public class WhDisasm {
         // init parse tree
 
         // stack manipulation 
-        Command push = new Command("push", true);
+        Command push =      new Command("push       ", true);
         Command duplicate = new Command("duplicate");
-        Command copyn = new Command("copyn", true);
-        Command swap = new Command("swap");
-        Command discard = new Command("discard");
-        Command sliden = new Command("sliden", true);
+        Command copyn =     new Command("copyn      ", true);
+        Command swap =      new Command("swap");
+        Command discard =   new Command("discard");
+        Command sliden =    new Command("sliden     ", true);
 
         // arithmetic
         Command add = new Command("add");
@@ -58,15 +58,15 @@ public class WhDisasm {
         Command mod = new Command("mod");
 
         // heap access
-        Command store = new Command("store");
-        Command retrieve = new Command("retrieve");
+        Command store =     new Command("store");
+        Command retrieve =  new Command("retrieve");
 
         // flow control
-        Command mark = new Command("mark", true);
-        Command call = new Command("call", true);
-        Command jump = new Command("jump", true);
-        Command branchz = new Command("branchz", true);
-        Command branchltz = new Command("branchltz", true);
+        Command mark =      new Command("mark       ", true);
+        Command call =      new Command("call       ", true);
+        Command jump =      new Command("jump       ", true);
+        Command branchz =   new Command("branchz    ", true);
+        Command branchltz = new Command("branchltz  ", true);
         Command ret = new Command("return");
         Command end = new Command("end");
 
