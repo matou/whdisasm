@@ -195,15 +195,15 @@ public class WhDisasm {
 
     static class Command extends Node {
 
-        private String name;
+        private String mnemonic;
         private boolean param;
 
-        Command(String name) {
-            this(name, false);
+        Command(String mnemonic) {
+            this(mnemonic, false);
         }
 
-        Command(String name, boolean param) {
-            this.name = name;
+        Command(String mnemonic, boolean param) {
+            this.mnemonic = mnemonic;
             this.param = param;
         }
 
