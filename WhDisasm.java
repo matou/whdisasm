@@ -28,9 +28,7 @@ public class WhDisasm {
             }
 
             // end of stream?
-            if (i==-1) {
-                System.exit(0);
-            }
+            if (i==-1) System.exit(0);
 
             c = (char)i;
 
