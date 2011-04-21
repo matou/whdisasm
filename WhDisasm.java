@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011 Matthias Matouesk <matou@taunusstein.net>
+ * Copyright (c) 2011 Matthias Matousek <matou@taunusstein.net>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -224,11 +224,12 @@ public class WhDisasm {
 
         void process() {
 
-            System.out.print(this.name + " ");
+            System.out.print(this.mnemonic + " ");
 
             char c;
 
             if (this.param) {
+                System.out.print("0b");
                 c = read();
                 while(c != '\n') {
                     System.out.print((c==' ') ? 0 : 1);
